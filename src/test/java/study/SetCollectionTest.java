@@ -26,7 +26,10 @@ public class SetCollectionTest {
     @Test
     @DisplayName("Set collection 사이즈 테스트")
     void numbersSizeCheck() {
-        assertThat(numbers.size()).isEqualTo(3);
+//        assertThat(numbers.size()).isEqualTo(3);
+
+        // 체이닝 메서드
+        asserThat(numbers).hasSize(3);
     }
 
     @DisplayName("Set Collection 값이 올바른지 테스트")
